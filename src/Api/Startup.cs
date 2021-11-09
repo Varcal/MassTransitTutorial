@@ -1,5 +1,6 @@
 using System;
 using AutoMapper;
+using MassTransit;
 using MassTransitTutorial.Application;
 using MassTransitTutorial.Domain.Customer;
 using MassTransitTutorial.Mappings;
@@ -78,7 +79,19 @@ namespace MassTransitTutorial.Api
             #endregion
 
             #region MassTransit
+            services.AddMassTransit(config =>
+            {
+                config.UsingRabbitMq((context, busConfig) =>
+                {
+                    busConfig.Host(Configuration.GetSection("RabbitMQ:Host").Value, c =>
+                    {
+                        c.Username(Configuration.GetSection("RabbitMQ:UserName").Value);
+                        c.Password(Configuration.GetSection("RabbitMQ:Password").Value);
+                    });
+                });
+            });
 
+            services.AddMassTransitHostedService();
             #endregion
         }
 
