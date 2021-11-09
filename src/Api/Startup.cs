@@ -24,7 +24,6 @@ namespace MassTransitTutorial.Api
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
@@ -67,12 +66,12 @@ namespace MassTransitTutorial.Api
                     Version = "v1",
                     Title = "MassTransit Tutorial API",
                     Description = "API básica e sem nenhum propósito interessante para demonstrar a utilização do MassTransit",
-                    TermsOfService = new Uri("https://aresistencia.dev"),
+                    TermsOfService = new Uri("https://varcalsys.com.br"),
                     Contact = new OpenApiContact
                     {
-                        Name = "Diego Brunetti Teixeira",
-                        Email = "diegoonsoftware@gmail.com",
-                        Url = new Uri("https://aresistencia.dev"),
+                        Name = "Cleber Varçal",
+                        Email = "cleber.varcal@varcalsys.com.br",
+                        Url = new Uri("https://varcalsys.com.br"),
                     }
                 });
             });
@@ -83,7 +82,6 @@ namespace MassTransitTutorial.Api
             #endregion
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
