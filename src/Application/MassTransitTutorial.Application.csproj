@@ -1,6 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <PackageReference Include="MassTransit" Version="7.2.4" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Infrastructure\Persistence\MassTransitTutorial.Persistence.csproj" />
     <ProjectReference Include="..\Domain\MassTransitTutorial.Domain.csproj" />
     <ProjectReference Include="..\Infrastructure\Mappings\MassTransitTutorial.Mappings.csproj" />
