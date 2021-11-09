@@ -15,6 +15,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MassTransitTutorial.Mappings", "src\Infrastructure\Mappings\MassTransitTutorial.Mappings.csproj", "{689C5490-F4A6-4C61-97A8-2D9977275B1C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Consumers", "Consumers", "{E9810BF7-817F-4909-BC70-D21246D36BB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransitTutorial.Consumers", "src\Consumers\MassTransitTutorial.Consumers\MassTransitTutorial.Consumers.csproj", "{FC95B886-1EC4-4BCB-A6DF-D5D0566AD508}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,12 +89,25 @@ Global
 		{689C5490-F4A6-4C61-97A8-2D9977275B1C}.Release|x64.Build.0 = Release|Any CPU
 		{689C5490-F4A6-4C61-97A8-2D9977275B1C}.Release|x86.ActiveCfg = Release|Any CPU
 		{689C5490-F4A6-4C61-97A8-2D9977275B1C}.Release|x86.Build.0 = Release|Any CPU
+		{FC95B886-1EC4-4BCB-A6DF-D5D0566AD508}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC95B886-1EC4-4BCB-A6DF-D5D0566AD508}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC95B886-1EC4-4BCB-A6DF-D5D0566AD508}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FC95B886-1EC4-4BCB-A6DF-D5D0566AD508}.Debug|x64.Build.0 = Debug|Any CPU
+		{FC95B886-1EC4-4BCB-A6DF-D5D0566AD508}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FC95B886-1EC4-4BCB-A6DF-D5D0566AD508}.Debug|x86.Build.0 = Debug|Any CPU
+		{FC95B886-1EC4-4BCB-A6DF-D5D0566AD508}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC95B886-1EC4-4BCB-A6DF-D5D0566AD508}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC95B886-1EC4-4BCB-A6DF-D5D0566AD508}.Release|x64.ActiveCfg = Release|Any CPU
+		{FC95B886-1EC4-4BCB-A6DF-D5D0566AD508}.Release|x64.Build.0 = Release|Any CPU
+		{FC95B886-1EC4-4BCB-A6DF-D5D0566AD508}.Release|x86.ActiveCfg = Release|Any CPU
+		{FC95B886-1EC4-4BCB-A6DF-D5D0566AD508}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{689C5490-F4A6-4C61-97A8-2D9977275B1C} = {77B670AE-594D-4DA4-891D-59EE67F04DB3}
+		{FC95B886-1EC4-4BCB-A6DF-D5D0566AD508} = {E9810BF7-817F-4909-BC70-D21246D36BB0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {92781D65-C4E7-44F5-AC6A-8CD5526CA770}
