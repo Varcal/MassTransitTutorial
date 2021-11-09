@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace MassTransitTutorial.Domain
+namespace MassTransitTutorial.Domain.Common
 {
     public class ServiceResult<T>
     {

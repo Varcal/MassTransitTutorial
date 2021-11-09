@@ -1,6 +1,6 @@
 using System;
 
-namespace MassTransitTutorial.Domain
+namespace MassTransitTutorial.Domain.Customer.Dtos
 {
     public class CustomerDto
     {

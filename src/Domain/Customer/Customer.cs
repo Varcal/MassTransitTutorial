@@ -1,6 +1,7 @@
 using System;
+using MassTransitTutorial.Domain.Common;
 
-namespace MassTransitTutorial.Domain
+namespace MassTransitTutorial.Domain.Customer
 {
     public class Customer : CustomerBase
     {

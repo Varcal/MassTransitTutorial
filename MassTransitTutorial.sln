@@ -1,19 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransitTutorial.Api", "src\Api\MassTransitTutorial.Api.csproj", "{F1D1827C-7F4F-429E-96FF-D98D78F990D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MassTransitTutorial.Api", "src\Api\MassTransitTutorial.Api.csproj", "{F1D1827C-7F4F-429E-96FF-D98D78F990D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransitTutorial.Application", "src\Application\MassTransitTutorial.Application.csproj", "{A223DBBD-4580-40F2-962F-B738D3166EFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MassTransitTutorial.Application", "src\Application\MassTransitTutorial.Application.csproj", "{A223DBBD-4580-40F2-962F-B738D3166EFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransitTutorial.Domain", "src\Domain\MassTransitTutorial.Domain.csproj", "{2C41E645-5E54-4362-A42F-1B46E122FAF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MassTransitTutorial.Domain", "src\Domain\MassTransitTutorial.Domain.csproj", "{2C41E645-5E54-4362-A42F-1B46E122FAF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransitTutorial.Persistence", "src\Infrastructure\Persistence\MassTransitTutorial.Persistence.csproj", "{6D953C62-F92D-415C-9EC6-567E048ECD3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MassTransitTutorial.Persistence", "src\Infrastructure\Persistence\MassTransitTutorial.Persistence.csproj", "{6D953C62-F92D-415C-9EC6-567E048ECD3B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{77B670AE-594D-4DA4-891D-59EE67F04DB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransitTutorial.Mappings", "src\Infrastructure\Mappings\MassTransitTutorial.Mappings.csproj", "{689C5490-F4A6-4C61-97A8-2D9977275B1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MassTransitTutorial.Mappings", "src\Infrastructure\Mappings\MassTransitTutorial.Mappings.csproj", "{689C5490-F4A6-4C61-97A8-2D9977275B1C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,9 +23,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{F1D1827C-7F4F-429E-96FF-D98D78F990D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -89,7 +86,13 @@ Global
 		{689C5490-F4A6-4C61-97A8-2D9977275B1C}.Release|x86.ActiveCfg = Release|Any CPU
 		{689C5490-F4A6-4C61-97A8-2D9977275B1C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{689C5490-F4A6-4C61-97A8-2D9977275B1C} = {77B670AE-594D-4DA4-891D-59EE67F04DB3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92781D65-C4E7-44F5-AC6A-8CD5526CA770}
 	EndGlobalSection
 EndGlobal

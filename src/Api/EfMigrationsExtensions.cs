@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace MassTransiTutorial.Api
+namespace MassTransitTutorial.Api
 {
     public static class EfMigrationsExtensions
     {

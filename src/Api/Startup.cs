@@ -1,9 +1,9 @@
 using System;
 using AutoMapper;
-using MassTransitTutorial.Domain;
+using MassTransitTutorial.Application;
+using MassTransitTutorial.Domain.Customer;
 using MassTransitTutorial.Mappings;
 using MassTransitTutorial.Persistence;
-using MassTransiTutorial.Application;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -13,7 +13,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 
-namespace MassTransiTutorial.Api
+namespace MassTransitTutorial.Api
 {
     public class Startup
     {
@@ -38,8 +38,10 @@ namespace MassTransiTutorial.Api
             #endregion
 
             #region MySQL
+
+            var conn = Configuration.GetConnectionString("MySql");
             services.AddDbContextPool<CustomerContext>(options => options
-                .UseMySql(Configuration.GetConnectionString("MySql"))
+                .UseMySql(conn, ServerVersion.AutoDetect(conn))
                 .UseLoggerFactory(
                     LoggerFactory.Create(
                         logging => logging

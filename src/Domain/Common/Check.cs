@@ -1,6 +1,6 @@
 using System;
 
-namespace MassTransitTutorial.Domain
+namespace MassTransitTutorial.Domain.Common
 {
     public static class Check
     {

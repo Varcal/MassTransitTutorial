@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace MassTransitTutorial.Domain
+namespace MassTransitTutorial.Domain.Customer.Dtos
 {
     public class NewCustomerDto
     {

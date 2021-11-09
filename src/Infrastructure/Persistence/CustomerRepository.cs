@@ -2,6 +2,7 @@ using System;
 using System.Threading.Tasks;
 using AutoMapper;
 using MassTransitTutorial.Domain;
+using MassTransitTutorial.Domain.Customer;
 using Microsoft.EntityFrameworkCore;
 
 namespace MassTransitTutorial.Persistence

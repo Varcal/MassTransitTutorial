@@ -1,9 +1,10 @@
 using System;
 using System.Threading.Tasks;
-using MassTransitTutorial.Domain;
+using MassTransitTutorial.Domain.Customer;
+using MassTransitTutorial.Domain.Customer.Dtos;
 using Microsoft.AspNetCore.Mvc;
 
-namespace MassTransitTutorial.Api
+namespace MassTransitTutorial.Api.Controllers
 {
     [Produces("application/json")]
     [Route("api/customer")]

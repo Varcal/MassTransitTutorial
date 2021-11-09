@@ -2,6 +2,9 @@
 using AutoMapper;
 using MassTransitTutorial.Persistence;
 using MassTransitTutorial.Domain;
+using MassTransitTutorial.Domain.Customer;
+using MassTransitTutorial.Domain.Customer.Dtos;
+using Type = MassTransitTutorial.Domain.Customer.Type;
 
 namespace MassTransitTutorial.Mappings
 {
@@ -23,7 +26,7 @@ namespace MassTransitTutorial.Mappings
                         CustomerId.FromValue(src.Id),
                         src.Name,
                         src.BirthDate,
-                        (MassTransitTutorial.Domain.Type)src.Type,
+                        (Type)src.Type,
                         src.CreatedAt,
                         src.UpdatedAt));
 
@@ -33,7 +36,7 @@ namespace MassTransitTutorial.Mappings
                 .ConstructUsing(src => new NewCustomer(
                     src.Name,
                     src.BirthDate,
-                    (MassTransitTutorial.Domain.Type)Enum.Parse(typeof(MassTransitTutorial.Domain.Type), src.Type)));
+                    (Type)Enum.Parse(typeof(Type), src.Type)));
         }
     }
 }

@@ -1,8 +1,10 @@
 using System.Threading.Tasks;
 using AutoMapper;
-using MassTransitTutorial.Domain;
+using MassTransitTutorial.Domain.Common;
+using MassTransitTutorial.Domain.Customer;
+using MassTransitTutorial.Domain.Customer.Dtos;
 
-namespace MassTransiTutorial.Application
+namespace MassTransitTutorial.Application
 {
     public class UpdateBirthDateService : IUpdateBirthDateService
     {

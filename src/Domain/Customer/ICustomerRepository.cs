@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace MassTransitTutorial.Domain
+namespace MassTransitTutorial.Domain.Customer
 {
     public interface ICustomerRepository
     {

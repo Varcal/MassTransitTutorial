@@ -1,4 +1,4 @@
-namespace MassTransitTutorial.Domain
+namespace MassTransitTutorial.Domain.Customer
 {
     public enum Type
     {

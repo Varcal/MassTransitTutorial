@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using MassTransitTutorial.Domain;
+using MassTransitTutorial.Domain.Common;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace MassTransitTutorial.Api
